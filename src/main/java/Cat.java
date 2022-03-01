@@ -1,20 +1,17 @@
-public class Cat {
-    private String name;
-    private String color;
-    private int age;
+/**
+ * java1.HomeWorkSix
+ *
+ * @author Zakharov Vladimir
+ * @version 01.03.2022
+ */
+class Cat extends Animal {
 
-    Cat(String name, String color, int age) {
-        this.name = name;
-        this.color = color;
-        this.age = age;
-    }
-
-    String voice() {
-        return "meow";
+    Cat(int runLimit) {
+        super(runLimit, -1);
     }
 
     @Override
-    public String toString() {
-        return name + ", " + color + ", " + age;
+    public String swim(int distance) {
+        return getClassName() + " can't swim";
     }
 }
